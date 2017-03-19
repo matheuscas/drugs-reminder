@@ -1,6 +1,7 @@
-<<<<<<< HEAD
-Ionic 2 App Base
+Drugs/Pill reminder
 =====================
+
+Description: A simple app to record and remind the hour to take your drugs/pills
 
 This is the base template for Ionic 2 starter apps.
 
@@ -19,7 +20,4 @@ $ ionic start myApp
 ```
 
 More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/docs/v2/getting-started/) page.
-=======
-# drugs-reminder
-A simple app to record and remind the hour to take your drugs/pills
->>>>>>> 8d4847a96a4995f2172afb539459b96ea6344db5
+
