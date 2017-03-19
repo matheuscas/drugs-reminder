@@ -1,3 +1,4 @@
+import { DrugsReminderPage } from './../drugs-reminder/drugs-reminder';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
@@ -15,8 +16,8 @@ export class DrugsRemindersListPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad DrugsRemindersListPage');
+  newReminder(){
+    this.navCtrl.push(DrugsReminderPage);
   }
 
 }
