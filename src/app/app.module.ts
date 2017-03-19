@@ -1,3 +1,4 @@
+import { DrugsReminderPage } from './../pages/drugs-reminder/drugs-reminder';
 import { DrugsRemindersListPage } from './../pages/drugs-reminders-list/drugs-reminders-list';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -8,7 +9,8 @@ import { HomePage } from '../pages/home/home';
   declarations: [
     MyApp,
     HomePage,
-    DrugsRemindersListPage
+    DrugsRemindersListPage,
+    DrugsReminderPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -17,7 +19,8 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage,
-    DrugsRemindersListPage
+    DrugsRemindersListPage,
+    DrugsReminderPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
