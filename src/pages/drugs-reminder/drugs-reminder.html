@@ -7,12 +7,44 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Lembrete</ion-title>
+    <ion-title>Novo lembrete</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <form>
+    <ion-item>
+      <ion-label fixed>Remédio</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Dosagem</ion-label>
+      <ion-input type="text" placeholder="e.g. 20 mg"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Período</ion-label>
+      <ion-select>
+        <ion-option value="0" selected="true">De 2 em 2 horas</ion-option>
+        <ion-option value="1">De 4 em 4 horas</ion-option>
+        <ion-option value="2">De 6 em 6 horas</ion-option>
+        <ion-option value="3">De 8 em 8 horas</ion-option>
+        <ion-option value="4">De 12 em 12 horas</ion-option>
+        <ion-option value="5">1 vez ao dia</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Duração (dias)</ion-label>
+      <ion-input type="number" placeholder="5"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Hora</ion-label>
+      <ion-datetime displayFormat="hh:mm a" placeholder = "9:40 am"></ion-datetime>
+    </ion-item>
+
+    <button ion-button block type="submit">Salvar</button>
+
+  </form>
 
 </ion-content>

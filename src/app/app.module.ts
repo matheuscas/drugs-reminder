@@ -4,6 +4,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { HomePage } from '../pages/home/home';
     DrugsReminderPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    FormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
